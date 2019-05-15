@@ -10,7 +10,7 @@ if nombre == 'main':
     if len(sys.argv) != 2:
         uso()
     nombrearchivo = sys.argv[1]
-    texto = open(nombrearchivo).read()
+    texto = open(operaciones.txt).read()
     tokens = imp_lex(texto)
     for t in tokens:
         print t
